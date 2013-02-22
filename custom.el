@@ -1,7 +1,7 @@
 (custom-set-variables)
 (custom-set-faces)
 
-(if (eq system-type 'darwin')
+(if (eq system-type 'darwin)
     ;; custom stuff that was taken out of init.el
     (add-to-list 'load-path "/Users/Josef/tramp/lisp/")
   (add-to-list 'load-path "/Users/Josef/tramp/contrib")
