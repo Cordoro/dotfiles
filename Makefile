@@ -15,7 +15,7 @@ all: ~/.profile ~/.emacs ~/.xemacs/custom.el ~/.xemacs/init.el
 
 # create .xemacs if it doesn't exist
 ~/.xemacs: 
-	@if test -d ~/.xemacs; then echo -n ''; else mkdir ~/.xemacs; echo 'created ~/.xmacs/'fi
+	@if test -d ~/.xemacs; then echo -n ''; else mkdir ~/.xemacs; echo 'created ~/.xemacs/'; fi
 
 ~/.xemacs/custom.el: ~/.xemacs
 	@${COPY} $(PWD)/custom.el ~/.xemacs/custom.el
