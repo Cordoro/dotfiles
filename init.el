@@ -7,7 +7,7 @@
 (global-set-key "\C-xg" 'goto-line) 
 
 ;; start emacsserver
-(server-start)
+;;(server-start)
 
 ;; for-each
 ;; --------

@@ -8,14 +8,14 @@
   (require 'tramp)
   
   ;; Trying to add python mode
-  (add-to-list 'load-path "/Users/Josef/python-mode-1.0alpha")
-  (require 'python-mode)
+  ;;(add-to-list 'load-path "/Users/Josef/python-mode-1.0alpha")
+  ;;(require 'python-mode)
   
   ;; Javascript mode
-  (add-to-list 'load-path "/Users/Josef/js2-mode")
-  (require 'js2-mode)
-  (autoload 'js2-mode "js2-mode" nil t)
-  (add-to-list 'auto-mode-alist '("\\.js$" . js2-mode))
+  ;;(add-to-list 'load-path "/Users/Josef/js2-mode")
+  ;;(require 'js2-mode)
+  ;;(autoload 'js2-mode "js2-mode" nil t)
+  ;;(add-to-list 'auto-mode-alist '("\\.js$" . js2-mode))
 )
 
 ;; verilog mode
