@@ -26,7 +26,7 @@ fi
 # Mac only settings
 if [[ ${OSTYPE//[0-9.]/} == 'darwin' ]]; then
 # Add android SDK
-    export PATH=$PATH:$HOME/android-sdk-macosx/tools:$HOME/android-sdk-macosx/platform-tools
+    export PATH=$PATH:$HOME/android-sdk-macosx/tools:$HOME/android-sdk-macosx/platform-tools:/usr/local/share/python
     export ANDROID_SDK_ROOT=$HOME/android-sdk-macosx
     export NDK_ROOT=$HOME/android-ndk
 
