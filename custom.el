@@ -16,8 +16,6 @@
   ;;(require 'js2-mode)
   ;;(autoload 'js2-mode "js2-mode" nil t)
   ;;(add-to-list 'auto-mode-alist '("\\.js$" . js2-mode))
-)
-
 ;; verilog mode
 (defun prepend-path ( my-path )
 (setq load-path (cons (expand-file-name my-path) load-path)))
@@ -42,14 +40,17 @@
 (add-hook 'python-mode-hook 'jedi:setup)
 
 ;; be sure el-get is set up
-(add-to-list 'load-path "~/.emacs.d/el-get/el-get")
+;; (add-to-list 'load-path "~/.emacs.d/el-get/el-get")
 
-(unless (require 'el-get nil 'noerror)
-  (with-current-buffer
-      (url-retrieve-synchronously
-       "https://raw.github.com/dimitri/el-get/master/el-get-install.el")
-    (let (el-get-master-branch)
-      (goto-char (point-max))
-      (eval-print-last-sexp))))
+;; (unless (require 'el-get nil 'noerror)
+;;   (with-current-buffer
+;;       (url-retrieve-synchronously
+;;        "https://raw.github.com/dimitri/el-get/master/el-get-install.el")
+;;     (let (el-get-master-branch)
+;;       (goto-char (point-max))
+;;       (eval-print-last-sexp))))
 
-(el-get 'sync)
+;; (el-get 'sync)
+)
+
+
